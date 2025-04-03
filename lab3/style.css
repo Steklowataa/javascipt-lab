@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+.keyboard {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.key {
+    width: 80px;
+    height: 80px;
+    background: #444;
+    border: 2px solid #666;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 4px #222;
+    cursor: pointer;
+}
+
+.key:active, .key.active {
+    background: #ff5733;
+    transform: translateY(4px);
+    box-shadow: 0 2px #111;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 kolumny */
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 80%; /* Kontener na przyciski sterujące */
+}
+
+button {
+    padding: 10px 15px;
+    background: #333;
+    color: white;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #555;
+}
+
+button:active {
+    background-color: #ff5733;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+audio {
+    display: none;
+}
+
+#stopMetronom, #startMetronom {
+    background-color: hsl(11, 69%, 50%);
+}
+
+#stopMetronom:hover, #startMetronom:hover {
+    background-color: #78220e;
+}
+
+#all {
+    background-color:  #555;
+}
+
+#all:hover {
+    background-color:#ef8973 ;
+}
