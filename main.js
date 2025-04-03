@@ -20,10 +20,9 @@ function Sum() {
 
 }
 
-let inputCount = 0; // Licznik pól input
+let inputCount = 0; 
     const inputColumn = document.getElementById("input-column");
 
-    // Funkcja dodająca pole input
     function addField() {
         const div = document.createElement("div");
         div.classList.add("input-group");
