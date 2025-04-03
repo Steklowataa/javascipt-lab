@@ -1,0 +1,55 @@
+.container {
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    border: none;
+}
+.results {
+    font-weight: bold;
+}
+
+.input {
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.add-btn {
+    order:1;
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black
+}
+
+.btn {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: chartreuse;
+    order:1;
+}
