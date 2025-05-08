@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatki App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .note {
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            color: white;
+        }
+        .note button {
+            display: block;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Create your note!</h2>
+    <form id="note-form">
+        <input type="text" id="title" placeholder="Your title" required>
+        <textarea id="content" cols="30" rows="3" placeholder="Description" required></textarea>
+        <input type="color" id="color" value="#ffffff">
+        <input type="text" id="tags" placeholder="Tags (comma separated)">
+        <label>
+            <input type="checkbox" id="pin"> Pin this note
+        </label>
+        <button type="submit">Add Note</button>
+    </form>
+
+    <h2>Search Notes</h2>
+    <input type="text" id="search" placeholder="Search notes...">
+
+    <h2>Your Notes</h2>
+    <div id="notes-container"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
