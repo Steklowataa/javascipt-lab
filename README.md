@@ -5,4 +5,4 @@
 - 🥁 Zadanie drumkkit [Lab3](lab3)
 - 🗒️ Zadanie notatki [Lab4](lab4)
 - 💻 Zadanie 5 dodatkowe [Lab5](lab5)
-- 
+- ✏️ Zadanie z canvas [Lab8](lab8) 
