@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Kochinoor';
+    src: url('./assets/fonts/kohinoor-font-family-1726713018-0/KohinoorLatin-Black-BF63c76510c679a.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+.block-text {
+    @apply rounded-lg w-[180px] h-[120px] leading-[10px] bg-[rgba(34,33,35,0.7)] ;
+}
+
+.main-text {
+    @apply text-[rgba(128,146,208,1)] font-medium text-[18px] font-kochinoor flex items-center mt-[5px]
+}
+
+.middle-text {
+    @apply font-kochinoor text-[24px] text-white mt-[10px] pl-[10px]
+}
+
+.icon-temp {
+    @apply w-[50px] h-[50px]; 
+} 
+
+
+
+.icon-blue {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(20%) hue-rotate(210deg) brightness(90%);
+}
+
+.icon-temp {
+    height: 40px;
+    width: 40px;
+}
+  
+.icon-visibility {
+    height: 40px;
+    width: 40px;
+    position: block;
+}
+
+.icon-humidity {
+    position: block;
+    width: 50px;
+    height: 50px;
+
+}
+
+.icon-speed {
+    height: 40px;
+    width: 40px;
+    position: block;
+}
+
+#wind-speed {
+    margin-left: 40px;
+}
+
+.btn {
+    @apply absolute top-[20px] left-[1380px]
+}
+
+.body {
+    background: radial-gradient(circle, cyan, blue);
+}

@@ -1,0 +1,5 @@
+export * from './functions'
+export * from './text'
+export * from './getInfoWeather'
+export * from './changeBackground'
+export * from './getWeatherIcon'
