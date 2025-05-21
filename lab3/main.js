@@ -9,8 +9,6 @@ const sounds = {
 const channels = [[], [], [], []];
 let isRecording = [false, false, false, false];
 let startTime = [0, 0, 0, 0]; 
-
-// Kontener na klawisze literowe
 const keyboardContainer = document.createElement("div");
 keyboardContainer.classList.add("keyboard");
 document.body.appendChild(keyboardContainer);
@@ -24,12 +22,12 @@ keys.forEach((key) => {
     keyboardContainer.appendChild(keyButton);
 });
 
-// Kontener na przyciski sterujące (Play, Stop, Record, Metronom)
+
 const controlsContainer = document.createElement("div");
 controlsContainer.classList.add("controls");
 document.body.appendChild(controlsContainer);
 
-// Przyciski sterujące
+
 for (let i = 0; i < 4; i++) {
     const recordButton = document.createElement("button");
     recordButton.innerText = `Start Recording ${i + 1}`;
