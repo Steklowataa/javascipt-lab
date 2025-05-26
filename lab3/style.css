@@ -14,6 +14,13 @@ body {
     margin-bottom: 20px;
 }
 
+.topBar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px, 10px;
+}
+
 .key {
     width: 80px;
     height: 80px;
@@ -38,7 +45,7 @@ body {
 
 .controls {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 4 kolumny */
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumny */
     gap: 10px;
     justify-content: center;
     margin-top: 20px;
@@ -54,6 +61,10 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: ease 0.2s, transform 0.1s;
+}
+
+#loop-btn {
+    background-color: red;
 }
 
 button:hover {
@@ -98,3 +109,4 @@ audio {
 #all:hover {
     background-color:#ef8973 ;
 }
+
