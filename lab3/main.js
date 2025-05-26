@@ -8,6 +8,7 @@ const sounds = {
 
 const channels = [[], [], [], []];
 let isRecording = [false, false, false, false];
+
 let startTime = [0, 0, 0, 0];
 let isLooping = [false, false, false, false];
 let loopIntervals = [null, null, null, null];
@@ -34,6 +35,7 @@ keys.forEach((key) => {
 const controlsContainer = document.createElement("div");
 controlsContainer.classList.add("controls");
 document.body.appendChild(controlsContainer);
+
 
 
 for (let i = 0; i < channels.length; i++) {
